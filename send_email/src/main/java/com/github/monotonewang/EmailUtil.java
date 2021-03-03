@@ -14,9 +14,15 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 //https://zhuanlan.zhihu.com/p/133120035
+// 如何通过Android Studio将项目发布到GitHub并同步到JitPack
+// https://www.jianshu.com/p/86a461ac154c
 public class EmailUtil {
 
-    public void send163(String sendEmail, String sendPassword, String sendUsername, String sendAuthCode, String receiveEmail) {
+    public static void alert() {
+        System.out.println("EmailUtil alert");
+    }
+
+    public static void send163(String sendEmail, String sendPassword, String sendUsername, String sendAuthCode, String receiveEmail) {
         new Thread() {
             @Override
             public void run() {
